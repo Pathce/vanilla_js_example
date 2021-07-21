@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,14 +8,16 @@
     <title>Document</title>
 </head>
 <body>
-    <h2 id="hello">안녕하세요</h2>
-    <h2 id="hi">올 때 메로나</h2>
-
     <script>
-        document.querySelector('#hello').innerHTML = '안녕하신가';
-        document.querySelector('#hello').style.fontSize = '30px';
-        document.querySelector('#hi').innerHTML = '올 때 바밤바';
-        document.querySelector('#hi').style.color = 'blue';
+        let func = (callback1, callback2) => {
+            const result = callback1 ?? callback2;
+            result();
+        }
+
+        func(
+            () => alert('callback1'),
+            () => alert('callback2')
+        )
     </script>
 </body>
 </html>

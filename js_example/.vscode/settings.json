@@ -1,0 +1,17 @@
+{
+  "open-in-browser.default": "chrome",
+  "liveServer.settings.donotShowInfoMsg": true,
+  "code-runner.runInTerminal": true,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.formatOnSave": true,
+  "launch": {
+    "configurations": [],
+    "compounds": []
+  },
+  "editor.codeActionsOnSave": {
+    // For ESLint
+    "source.fixAll.eslint": true
+  }
+}

@@ -1,12 +1,13 @@
 "use strict";
 
-let ask = (question, yes, no) => {
-    if (question) yes()
-    else no();
+function hello(name) {
+  let phrase = `Hello, ${name}!`;
+
+  say(phrase);
 }
 
-ask(
-    false,
-    () => console.log('ok'),
-    () => console.log('cancel')
-);
+function say(phrase) {
+  alert(`** ${phrase} **`);
+}
+
+hello("min");

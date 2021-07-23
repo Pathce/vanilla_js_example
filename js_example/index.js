@@ -1,13 +1,11 @@
 "use strict";
 
-function hello(name) {
-  let phrase = `Hello, ${name}!`;
+let user = {
+  name: "John",
+  age: 30,
+  "likes birds": true,
+};
 
-  say(phrase);
-}
-
-function say(phrase) {
-  alert(`** ${phrase} **`);
-}
-
-hello("min");
+console.log(user.name);
+console.log(user.age);
+console.log(user["likes birds"]);

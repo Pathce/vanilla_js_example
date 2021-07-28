@@ -1,11 +1,14 @@
-"use strict";
+function Accumulator(value = 0) {
+  this.value = value;
 
-let user = {
-  name: "John",
-  age: 30,
-  "likes birds": true,
-};
+  this.read = function (num = 0) {
+    this.value += num;
+  };
+}
 
-console.log(user.name);
-console.log(user.age);
-console.log(user["likes birds"]);
+let accumulator = new Accumulator(1);
+
+accumulator.read(2);
+accumulator.read(5);
+
+console.log(accumulator.value);

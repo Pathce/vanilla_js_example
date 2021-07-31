@@ -1,14 +1,5 @@
-function Accumulator(value = 0) {
-  this.value = value;
+const orders = [500, 30, 99, 15, 223];
 
-  this.read = function (num = 0) {
-    this.value += num;
-  };
+for (let value of orders) {
+  console.log(value);
 }
-
-let accumulator = new Accumulator(1);
-
-accumulator.read(2);
-accumulator.read(5);
-
-console.log(accumulator.value);
